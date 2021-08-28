@@ -1,4 +1,5 @@
 #!/bin/bash
+# From: https://github.com/jnwatts/pushover.sh
 
 # Default config vars
 CURL="$(which curl)"
