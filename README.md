@@ -18,6 +18,10 @@ Changes will be noted here by date, title if needed, files changed, summary of c
 
 _**Note: only changes of signifigance will be added.**_
 
+
+- **2021-11-05:** _The one with square corners._
+    * `configs/main_printer.cfg`
+        * `square_corner_velocity: 5.0` -> `square_corner_velocity: 8.0`
 - **2021-11-04:** _The one where I try to improve probing accuracy._
     * `configs/bed_mesh.cfg`
         * `relative_reference_index: 12` -> `relative_reference_index: 24`
