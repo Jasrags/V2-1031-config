@@ -19,6 +19,39 @@ Changes will be noted here by date, title if needed, files changed, summary of c
 _**Note: only changes of signifigance will be added.**_
 
 
+- **2021-11-08:** _The one where I try klicky probe again._
+    * Enabled
+        * `configs/dockable_probe.cfg`
+        * `configs/z_calibration.cfg`
+    * Disabled
+        * `configs/probe.cfg`
+	* `configs/bed_mesh.cfg` 
+        * Use dense bed mesh
+            * `probe_count: 5,5` -> `probe_count: 9,9`
+            * `relative_reference_index: 24` -> `relative_reference_index: 77`
+	* `configs/klipper_expander.cfg`
+        * Updated pin aliases 
+            * `MOSFET0=PA0, MOSFET2=PA1, MOSFET3=PA2, MOSFET4=PA3,` -> `MOSFET0=PA0, MOSFET1=PA1, MOSFET2=PA2, MOSFET3=PA3`
+	* `configs/main_printer.cfg`
+        * Updated pin aliases 
+            * `LED-R=PB6, LED-G=PB5, LED-B=PB7, LED_NEOPIXEL=PD3,` -> `LED_R=PB6, LED_G=PB5, LED_B=PB7, LED_NEOPIXEL=PD3`
+	* `configs/steppers.cfg`
+        * Slow down probing
+            * `homing_retract_dist: 3` -> `homing_retract_dist: 2`
+            * `second_homing_speed: 5` -> `second_homing_speed: 2`
+	* `macros/printing.cfg`
+        * Moved `PRINT_START` calibration commands to `CALIBRATE` in `macros/calibration.cfg`
+    * `macros/calibration.cfg`
+        * File created
+            * Added `CALIBRATE`
+                * Run printer calibration based on config. (quad_gantry_level,auto_z_offset,bed_mesh)
+            * Added `TEST_CALIBRATE` 
+                * Command to test CALIBRATE macro
+    * `macros/uncategorized.cfg`
+        * Renamed `SPEED_TEST` to `TEST_SPEED` and added description
+	* `moonraker.conf`
+        * Added `KlipperScreen` to `update_manager`
+    * `flash_klipper.sh` Added script to flash klipper on to all mcu instances.
 - **2021-11-05:** _The one with square corners._
     * `configs/main_printer.cfg`
         * `square_corner_velocity: 5.0` -> `square_corner_velocity: 8.0`
