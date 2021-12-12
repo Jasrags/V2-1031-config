@@ -1,6 +1,6 @@
-# Pronter (V2-1031) Klipper Config
+# Pronter (V2.1031) Klipper Config
 
-![Pronter (V2-1031)](./images/Pronter-V2-1031.png)
+![Pronter (V2.1031)](./images/Pronter-V2-1031.png)
 
 Klipper configs for this printer running fluidd.
 
@@ -76,8 +76,6 @@ _**Note: only changes of signifigance will be added.**_
 * [Umbilical Strain Relief](https://github.com/hartk1213/MISC/tree/main/Voron%20Mods/Voron%202/2.4/Voron2.4_umbilical_strain_relief)
 * [Afterburner Toolhead PCB](https://github.com/VoronDesign/Voron-Hardware/tree/master/Afterburner_Toolhead_PCB)
 * [Klipper Expander](https://github.com/VoronDesign/Voron-Hardware/tree/master/Klipper_Expander)
-* [Hour Counter](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/MarcPot/Skirt_Mods)
-
 
 # Klipper Plugins
 

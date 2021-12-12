@@ -19,8 +19,8 @@ make flash KCONFIG_CONFIG=config.rpi
 read -p "RPi firmware flashed, please check above for any errors. Press [Enter] to continue, or [Ctrl+C] to abort"
 
 # Flash MCU (Expander)
-# make clean KCONFIG_CONFIG=config.rpi
-# make menuconfig KCONFIG_CONFIG=config.rpi
+# make clean KCONFIG_CONFIG=config.expander
+# make menuconfig KCONFIG_CONFIG=config.expander
 # make KCONFIG_CONFIG=config.expander
 # read -p "Expander firmware built, please check above for any errors. Press [Enter] to continue flashing, or [Ctrl+C] to abort"
 # make flash KCONFIG_CONFIG=config.expander FLASH_DEVICE=0483:df11
